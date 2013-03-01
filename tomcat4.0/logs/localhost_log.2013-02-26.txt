@@ -1,0 +1,902 @@
+2013-02-26 20:26:03 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2013-02-26 20:26:03 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\..\server\webapps\manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 41 more
+
+2013-02-26 20:26:03 HostConfig[localhost] Error deploying configuration descriptor manager.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+
+2013-02-26 20:26:03 HostConfig[localhost]: Deploying configuration descriptor myadmin.xml
+2013-02-26 20:26:03 StandardContext[/myadmin]: Starting
+2013-02-26 20:26:03 StandardContext[/myadmin]: Processing start(), current available=false
+2013-02-26 20:26:03 StandardContext[/myadmin]: Configuring default Resources
+2013-02-26 20:26:03 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\..\server\webapps\myadmin does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 41 more
+
+2013-02-26 20:26:03 HostConfig[localhost] Error deploying configuration descriptor myadmin.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+
+2013-02-26 20:26:03 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 20:26:03 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 20:26:03 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 20:26:03 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 20:26:03 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 20:26:03 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 20:26:03 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 20:30:45 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2013-02-26 20:30:45 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\..\server\webapps\manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 41 more
+
+2013-02-26 20:30:45 HostConfig[localhost] Error deploying configuration descriptor manager.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+
+2013-02-26 20:30:45 HostConfig[localhost]: Deploying configuration descriptor myadmin.xml
+2013-02-26 20:30:45 StandardContext[/myadmin]: Starting
+2013-02-26 20:30:45 StandardContext[/myadmin]: Processing start(), current available=false
+2013-02-26 20:30:45 StandardContext[/myadmin]: Configuring default Resources
+2013-02-26 20:30:45 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\..\server\webapps\myadmin does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 41 more
+
+2013-02-26 20:30:45 HostConfig[localhost] Error deploying configuration descriptor myadmin.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+
+2013-02-26 20:30:45 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 20:30:45 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 20:30:45 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 20:30:45 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 20:30:45 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 20:30:45 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 20:30:45 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:22:22 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2013-02-26 21:22:23 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\..\server\webapps\manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 41 more
+
+2013-02-26 21:22:23 HostConfig[localhost] Error deploying configuration descriptor manager.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+
+2013-02-26 21:22:23 HostConfig[localhost]: Deploying configuration descriptor myadmin.xml
+2013-02-26 21:22:23 StandardContext[/myadmin]: Starting
+2013-02-26 21:22:23 StandardContext[/myadmin]: Processing start(), current available=false
+2013-02-26 21:22:23 StandardContext[/myadmin]: Configuring default Resources
+2013-02-26 21:22:23 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\..\server\webapps\myadmin does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 41 more
+
+2013-02-26 21:22:23 HostConfig[localhost] Error deploying configuration descriptor myadmin.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+
+2013-02-26 21:22:23 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 21:22:23 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 21:22:23 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 21:22:23 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 21:22:23 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 21:22:23 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:22:23 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:22:23 HostConfig[localhost]: Deploying web application directory HelloWorld
+2013-02-26 21:22:23 StandardHost[localhost]: Installing web application at context path /HelloWorld from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld
+2013-02-26 21:22:23 WebappLoader[/HelloWorld]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\HelloWorld
+2013-02-26 21:22:23 WebappLoader[/HelloWorld]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld\WEB-INF\classes
+2013-02-26 21:22:23 ContextConfig[/HelloWorld]: Missing default web.xml, using application web.xml only
+2013-02-26 21:22:23 StandardManager[/HelloWorld]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:22:23 StandardManager[/HelloWorld]: Seeding of random number generator has been completed
+2013-02-26 21:23:19 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 21:23:19 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 21:23:19 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 21:23:19 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 21:23:19 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 21:23:19 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:23:19 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:23:19 HostConfig[localhost]: Deploying web application directory HelloWorld
+2013-02-26 21:23:19 StandardHost[localhost]: Installing web application at context path /HelloWorld from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld
+2013-02-26 21:23:19 WebappLoader[/HelloWorld]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\HelloWorld
+2013-02-26 21:23:19 WebappLoader[/HelloWorld]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld\WEB-INF\classes
+2013-02-26 21:23:19 ContextConfig[/HelloWorld]: Missing default web.xml, using application web.xml only
+2013-02-26 21:23:19 StandardManager[/HelloWorld]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:23:19 StandardManager[/HelloWorld]: Seeding of random number generator has been completed
+2013-02-26 21:24:39 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 21:24:39 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 21:24:39 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 21:24:39 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 21:24:39 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 21:24:39 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:24:39 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:24:57 Using classLoader.loadClass
+ModernServlet -- init
+
+2013-02-26 21:25:33 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 21:25:33 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 21:25:33 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 21:25:33 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 21:25:33 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 21:25:33 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:25:33 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:25:56 Using classLoader.loadClass
+ModernServlet -- init
+
+2013-02-26 21:26:29 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 21:26:29 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 21:26:29 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 21:26:29 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 21:26:29 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 21:26:29 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:26:29 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:26:29 HostConfig[localhost]: Deploying web application directory HelloWorld
+2013-02-26 21:26:29 StandardHost[localhost]: Installing web application at context path /HelloWorld from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld
+2013-02-26 21:26:29 WebappLoader[/HelloWorld]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\HelloWorld
+2013-02-26 21:26:29 WebappLoader[/HelloWorld]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld\WEB-INF\classes
+2013-02-26 21:26:29 ContextConfig[/HelloWorld]: Missing default web.xml, using application web.xml only
+2013-02-26 21:26:29 StandardManager[/HelloWorld]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:26:29 StandardManager[/HelloWorld]: Seeding of random number generator has been completed
+2013-02-26 21:27:44 WebappLoader[/HelloWorld]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\HelloWorld
+2013-02-26 21:27:44 WebappLoader[/HelloWorld]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld\WEB-INF\classes
+2013-02-26 21:27:44 ContextConfig[/HelloWorld]: Missing default web.xml, using application web.xml only
+2013-02-26 21:27:44 StandardManager[/HelloWorld]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:27:44 StandardManager[/HelloWorld]: Seeding of random number generator has been completed
+2013-02-26 21:28:04 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 21:28:04 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 21:28:04 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 21:28:04 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 21:28:04 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 21:28:04 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:28:04 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:28:04 HostConfig[localhost]: Deploying web application directory HelloWorld
+2013-02-26 21:28:04 StandardHost[localhost]: Installing web application at context path /HelloWorld from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld
+2013-02-26 21:28:04 WebappLoader[/HelloWorld]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\HelloWorld
+2013-02-26 21:28:04 WebappLoader[/HelloWorld]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld\WEB-INF\classes
+2013-02-26 21:28:04 ContextConfig[/HelloWorld]: Missing default web.xml, using application web.xml only
+2013-02-26 21:28:04 StandardManager[/HelloWorld]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:28:04 StandardManager[/HelloWorld]: Seeding of random number generator has been completed
+2013-02-26 21:28:11 Using classLoader.loadClass
+
+2013-02-26 21:28:34 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2013-02-26 21:28:34 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.run(HostConfig.java:1008)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\..\server\webapps\manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 26 more
+
+2013-02-26 21:28:34 HostConfig[localhost] Error deploying configuration descriptor manager.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.run(HostConfig.java:1008)
+	at java.lang.Thread.run(Thread.java:722)
+
+2013-02-26 21:28:34 HostConfig[localhost]: Deploying configuration descriptor myadmin.xml
+2013-02-26 21:28:34 StandardContext[/myadmin]: Starting
+2013-02-26 21:28:34 StandardContext[/myadmin]: Processing start(), current available=false
+2013-02-26 21:28:34 StandardContext[/myadmin]: Configuring default Resources
+2013-02-26 21:28:34 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.run(HostConfig.java:1008)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\..\server\webapps\myadmin does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 26 more
+
+2013-02-26 21:28:34 HostConfig[localhost] Error deploying configuration descriptor myadmin.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.run(HostConfig.java:1008)
+	at java.lang.Thread.run(Thread.java:722)
+
+2013-02-26 21:30:04 HostConfig[localhost]: Deploying configuration descriptor manager.xml
+2013-02-26 21:30:04 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 41 more
+
+2013-02-26 21:30:04 HostConfig[localhost] Error deploying configuration descriptor manager.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 11; Error at (17, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+
+2013-02-26 21:30:04 HostConfig[localhost]: Deploying configuration descriptor myadmin.xml
+2013-02-26 21:30:04 StandardContext[/myadmin]: Starting
+2013-02-26 21:30:04 StandardContext[/myadmin]: Processing start(), current available=false
+2013-02-26 21:30:04 StandardContext[/myadmin]: Configuring default Resources
+2013-02-26 21:30:04 StandardHost[localhost]: Error deploying application at context path null
+org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2312)
+	at org.apache.commons.digester.Digester.createSAXException(Digester.java:2332)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1039)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:579)
+	at org.apache.xerces.impl.XMLNamespaceBinder.endElement(XMLNamespaceBinder.java:646)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(XMLDTDValidator.java:1972)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(XMLDTDValidator.java:878)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.handleEndElement(XMLDocumentFragmentScannerImpl.java:1144)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:987)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(XMLDocumentFragmentScannerImpl.java:1445)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:333)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:524)
+	at org.apache.xerces.parsers.DTDConfiguration.parse(DTDConfiguration.java:580)
+	at org.apache.xerces.parsers.XMLParser.parse(XMLParser.java:152)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1169)
+	at org.apache.commons.digester.Digester.parse(Digester.java:1514)
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:329)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.commons.beanutils.MethodUtils.invokeMethod(MethodUtils.java:228)
+	at org.apache.commons.digester.SetNextRule.end(SetNextRule.java:260)
+	at org.apache.commons.digester.Digester.endElement(Digester.java:1036)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Document base D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\myadmin does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:183)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3377)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:820)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:806)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:569)
+	at org.apache.catalina.core.StandardHostDeployer.addChild(StandardHostDeployer.java:522)
+	... 41 more
+
+2013-02-26 21:30:04 HostConfig[localhost] Error deploying configuration descriptor myadmin.xml
+java.io.IOException: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 11; Error at (2, 11: null
+	at org.apache.catalina.core.StandardHostDeployer.install(StandardHostDeployer.java:335)
+	at org.apache.catalina.core.StandardHost.install(StandardHost.java:792)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:448)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:405)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:875)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:364)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:166)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1193)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:727)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1185)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:341)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:496)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2186)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:505)
+	at org.apache.catalina.startup.Catalina.execute(Catalina.java:395)
+	at org.apache.catalina.startup.Catalina.process(Catalina.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:132)
+
+2013-02-26 21:30:04 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 21:30:04 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 21:30:04 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 21:30:04 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 21:30:04 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 21:30:04 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:30:04 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:30:04 HostConfig[localhost]: Deploying web application directory HelloWorld
+2013-02-26 21:30:04 StandardHost[localhost]: Installing web application at context path /HelloWorld from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld
+2013-02-26 21:30:04 WebappLoader[/HelloWorld]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\HelloWorld
+2013-02-26 21:30:04 WebappLoader[/HelloWorld]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld\WEB-INF\classes
+2013-02-26 21:30:04 ContextConfig[/HelloWorld]: Missing default web.xml, using application web.xml only
+2013-02-26 21:30:04 StandardManager[/HelloWorld]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:30:04 StandardManager[/HelloWorld]: Seeding of random number generator has been completed
+2013-02-26 21:34:20 HostConfig[localhost]: Deploying web application directory app1
+2013-02-26 21:34:20 StandardHost[localhost]: Installing web application at context path /app1 from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1
+2013-02-26 21:34:20 WebappLoader[/app1]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\app1
+2013-02-26 21:34:20 WebappLoader[/app1]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\app1\WEB-INF\classes
+2013-02-26 21:34:20 ContextConfig[/app1]: Missing default web.xml, using application web.xml only
+2013-02-26 21:34:20 StandardManager[/app1]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:34:20 StandardManager[/app1]: Seeding of random number generator has been completed
+2013-02-26 21:34:20 HostConfig[localhost]: Deploying web application directory HelloWorld
+2013-02-26 21:34:20 StandardHost[localhost]: Installing web application at context path /HelloWorld from URL file:D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld
+2013-02-26 21:34:20 WebappLoader[/HelloWorld]: Deploying class repositories to work directory D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\work\Standalone\localhost\HelloWorld
+2013-02-26 21:34:20 WebappLoader[/HelloWorld]: Deploy class files /WEB-INF/classes to D:\MoFan\浙江大学\深入剖析tomcat\workspace\tomcat4.0\webapps\HelloWorld\WEB-INF\classes
+2013-02-26 21:34:20 ContextConfig[/HelloWorld]: Missing default web.xml, using application web.xml only
+2013-02-26 21:34:20 StandardManager[/HelloWorld]: Seeding random number generator class java.security.SecureRandom
+2013-02-26 21:34:20 StandardManager[/HelloWorld]: Seeding of random number generator has been completed
+2013-02-26 21:34:23 Using classLoader.loadClass
+

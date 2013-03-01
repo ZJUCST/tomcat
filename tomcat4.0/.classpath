@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/commons-daemon.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/commons-modeler.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/jaas.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/jakarta-regexp-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/jcert.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/jnet.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/mx4j.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/naming-common.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/naming-factory.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/naming-resources.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/servlet.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/tomcat-util.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/Users/zmzsmnh/Downloads/tomcat4.0/lib/xmlParserAPIs.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
