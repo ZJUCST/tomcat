@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Server port="8005" shutdown="SHUTDOWN">
+	<Connector type="HttpConnector"></Connector>
+	<Container type="SimpleContainer">
+		<Context type="SimpleContext">
+			<Wrapper type="SimpleWrapper" name="Primitive" servletClass="PrimitiveServlet" />
+			<Wrapper type="SimpleWrapper" name="Modern" servletClass="ModernServlet" />
+			<ServletMapping name="Primitive" pattern="/Primitive" />
+			<ServletMapping name="Modern" pattern="/Modern" />
+			<Mapper type="SimpleContextMapper" protocal="http" />
+			<Loader type="SimpleLoader" />
+			<Valves>
+				<Valve type="com.haloword.valves.DurationLoggerValve" />
+				<!-- <Valve type="com.haloword.valves.HeaderLoggerValve" />
+				<Valve type="com.haloword.valves.ClientIPLoggerValve" /> -->
+			</Valves>
+		</Context>
+	</Container>
+</Server>

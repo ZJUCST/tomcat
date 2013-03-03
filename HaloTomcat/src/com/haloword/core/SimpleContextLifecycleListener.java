@@ -14,7 +14,7 @@ public class SimpleContextLifecycleListener implements LifecycleListener {
       System.out.println("Starting context.");
     }
     else if (Lifecycle.STOP_EVENT.equals(event.getType())) {
-      System.out.println("Stopping context.");
+      System.out.println("Starting context.");
     }
   }
 }
